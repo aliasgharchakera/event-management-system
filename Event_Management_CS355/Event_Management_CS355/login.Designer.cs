@@ -34,6 +34,7 @@ namespace Event_Management_CS355
             this.email_textbox = new System.Windows.Forms.TextBox();
             this.password_textbox = new System.Windows.Forms.TextBox();
             this.login_label = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // email_label
@@ -83,11 +84,21 @@ namespace Event_Management_CS355
             this.login_label.TabIndex = 4;
             this.login_label.Text = "Login";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(244, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Login_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 309);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.login_label);
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.email_textbox);
@@ -95,6 +106,7 @@ namespace Event_Management_CS355
             this.Controls.Add(this.email_label);
             this.Name = "Login_form";
             this.Text = "HU Events Portal";
+            this.Load += new System.EventHandler(this.Login_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +119,7 @@ namespace Event_Management_CS355
         private System.Windows.Forms.TextBox email_textbox;
         private System.Windows.Forms.TextBox password_textbox;
         private System.Windows.Forms.Label login_label;
+        private System.Windows.Forms.Button button1;
     }
 }
 

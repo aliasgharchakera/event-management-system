@@ -16,5 +16,10 @@ namespace Event_Management_CS355
         {
             InitializeComponent();
         }
+
+        private void Event_Viewer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

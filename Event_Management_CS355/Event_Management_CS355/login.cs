@@ -16,5 +16,10 @@ namespace Event_Management_CS355
         {
             InitializeComponent();
         }
+
+        private void Login_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
