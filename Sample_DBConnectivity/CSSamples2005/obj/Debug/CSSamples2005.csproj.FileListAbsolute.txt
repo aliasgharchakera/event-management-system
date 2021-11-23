@@ -1,0 +1,74 @@
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.exe
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.Cache
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\RdlCompile.cache
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\RdlCompile.compiled
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.exe
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+C:\Courses\Databases\Spring 2010\Labs\Lab16\CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+C:\Courses\Databases\Labs\Lab 13 - CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+C:\Courses\Databases\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.exe
+C:\Courses\Databases\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\bin\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.Cache
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\RdlCompile.cache
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\RdlCompile.compiled
+C:\Courses\Databases\Fall2017\Labs\Lab 13 - CSSamples2005\CSSamples2005\obj\Debug\CSSamples2005.csprojResolveAssemblyReference.cache
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.exe
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.pdb
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.pdb
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csprojResolveAssemblyReference.cache
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.Cache
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\RdlCompile.cache
+D:\Courses\Databases\Fall 2018\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\RdlCompile.compiled
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csprojResolveAssemblyReference.cache
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.Cache
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\RdlCompile.cache
+C:\Courses\Databases\Fall 2019\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\RdlCompile.compiled
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.pdb
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csprojAssemblyReference.cache
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.cache
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.CoreCompileInputs.cache
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.CopyComplete
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.exe
+C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.pdb
