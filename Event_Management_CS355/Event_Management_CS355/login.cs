@@ -31,5 +31,14 @@ namespace Event_Management_CS355
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Event_Viewer f2 = new Event_Viewer();
+            f2.ShowDialog();
+           // email_textbox.Text == student_id.email;
+         //   student_id.password_2 == password_textbox.Text;
+        }
     }
 }

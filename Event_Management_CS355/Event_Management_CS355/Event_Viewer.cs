@@ -21,5 +21,10 @@ namespace Event_Management_CS355
         {
 
         }
+
+        private void EventView_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
