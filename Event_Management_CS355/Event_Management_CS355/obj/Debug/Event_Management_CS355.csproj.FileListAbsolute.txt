@@ -20,3 +20,4 @@ F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\E
 F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.csproj.CoreCompileInputs.cache
 F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.exe
 F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.pdb
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.Register_form.resources

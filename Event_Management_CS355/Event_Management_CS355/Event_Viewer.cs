@@ -26,5 +26,49 @@ namespace Event_Management_CS355
         {
 
         }
+
+        private void button_Add_Click(object sender, EventArgs e)
+        {
+            /*this.Hide();*/
+            Register_form f2 = new Register_form();
+            f2.ShowDialog();
+            // email_textbox.Text == student_id.email;
+            //   student_id.password_2 == password_textbox.Text;
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void Upcoming_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_student_only_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkbox_open_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_past_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_filter_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            //do not know what to add
+        }
     }
 }
