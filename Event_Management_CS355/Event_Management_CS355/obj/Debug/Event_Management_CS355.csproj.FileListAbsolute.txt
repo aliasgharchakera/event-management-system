@@ -1,0 +1,11 @@
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\bin\Debug\Event_Management_CS355.exe.config
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\bin\Debug\Event_Management_CS355.exe
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\bin\Debug\Event_Management_CS355.pdb
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.csproj.AssemblyReference.cache
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.Event_Viewer.resources
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.Login_form.resources
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.Properties.Resources.resources
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.csproj.GenerateResource.cache
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.csproj.CoreCompileInputs.cache
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.exe
+C:\Users\uzair\Desktop\DBMS-Project\Event_Management_CS355\Event_Management_CS355\obj\Debug\Event_Management_CS355.pdb
