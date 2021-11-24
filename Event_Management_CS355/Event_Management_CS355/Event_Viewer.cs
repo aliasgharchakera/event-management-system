@@ -19,7 +19,7 @@ namespace Event_Management_CS355
 
         private void Event_Viewer_Load(object sender, EventArgs e)
         {
-
+            EventView_datagrid.Rows.Add("HUMUN", "29-Nov-2021", "Auditorium", "HU Public Speaking Club", "Competition");
         }
 
         private void EventView_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)

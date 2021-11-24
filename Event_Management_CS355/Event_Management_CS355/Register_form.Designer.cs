@@ -30,18 +30,18 @@ namespace Event_Management_CS355
         private void InitializeComponent()
         {
             this.groupBox_generaldetails = new System.Windows.Forms.GroupBox();
+            this.comboBox_location = new System.Windows.Forms.ComboBox();
+            this.textBox_budget = new System.Windows.Forms.TextBox();
+            this.textBox_org = new System.Windows.Forms.TextBox();
+            this.textBox_name = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.griupBox = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox_name = new System.Windows.Forms.TextBox();
-            this.textBox_org = new System.Windows.Forms.TextBox();
-            this.textBox_budget = new System.Windows.Forms.TextBox();
-            this.comboBox_location = new System.Windows.Forms.ComboBox();
             this.button_add = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.groupBox_generaldetails.SuspendLayout();
@@ -63,6 +63,73 @@ namespace Event_Management_CS355
             this.groupBox_generaldetails.TabIndex = 0;
             this.groupBox_generaldetails.TabStop = false;
             this.groupBox_generaldetails.Text = "General Details";
+            // 
+            // comboBox_location
+            // 
+            this.comboBox_location.FormattingEnabled = true;
+            this.comboBox_location.Location = new System.Drawing.Point(85, 95);
+            this.comboBox_location.Name = "comboBox_location";
+            this.comboBox_location.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_location.TabIndex = 7;
+            // 
+            // textBox_budget
+            // 
+            this.textBox_budget.Location = new System.Drawing.Point(85, 73);
+            this.textBox_budget.Name = "textBox_budget";
+            this.textBox_budget.Size = new System.Drawing.Size(121, 20);
+            this.textBox_budget.TabIndex = 6;
+            // 
+            // textBox_org
+            // 
+            this.textBox_org.Location = new System.Drawing.Point(85, 51);
+            this.textBox_org.Name = "textBox_org";
+            this.textBox_org.Size = new System.Drawing.Size(121, 20);
+            this.textBox_org.TabIndex = 5;
+            this.textBox_org.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox_name
+            // 
+            this.textBox_name.Location = new System.Drawing.Point(85, 29);
+            this.textBox_name.Name = "textBox_name";
+            this.textBox_name.Size = new System.Drawing.Size(121, 20);
+            this.textBox_name.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Location: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Budget: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Organizer:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name: ";
             // 
             // griupBox
             // 
@@ -91,73 +158,6 @@ namespace Event_Management_CS355
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "General Details";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Organizer:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Budget: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Location: ";
-            // 
-            // textBox_name
-            // 
-            this.textBox_name.Location = new System.Drawing.Point(85, 29);
-            this.textBox_name.Name = "textBox_name";
-            this.textBox_name.Size = new System.Drawing.Size(121, 20);
-            this.textBox_name.TabIndex = 4;
-            // 
-            // textBox_org
-            // 
-            this.textBox_org.Location = new System.Drawing.Point(85, 51);
-            this.textBox_org.Name = "textBox_org";
-            this.textBox_org.Size = new System.Drawing.Size(121, 20);
-            this.textBox_org.TabIndex = 5;
-            this.textBox_org.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox_budget
-            // 
-            this.textBox_budget.Location = new System.Drawing.Point(85, 73);
-            this.textBox_budget.Name = "textBox_budget";
-            this.textBox_budget.Size = new System.Drawing.Size(121, 20);
-            this.textBox_budget.TabIndex = 6;
-            // 
-            // comboBox_location
-            // 
-            this.comboBox_location.FormattingEnabled = true;
-            this.comboBox_location.Location = new System.Drawing.Point(85, 95);
-            this.comboBox_location.Name = "comboBox_location";
-            this.comboBox_location.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_location.TabIndex = 7;
             // 
             // button_add
             // 

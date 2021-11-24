@@ -35,7 +35,7 @@ namespace Event_Management_CS355
         }
 
         public string conString = "Data Source=ANOTHER-IDEAPAD;Initial Catalog = EventManagement; Integrated Security = True";
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,36 +58,50 @@ namespace Event_Management_CS355
             cmd.CommandType = CommandType.Text;
 
 
-            try { 
-                string password = cmd.ExecuteScalar().ToString();
-                if (password == password_textbox.Text)
-                {
-                    this.Hide();
-                    Event_Viewer f2 = new Event_Viewer();
-                    f2.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Wrong Password!!!!");
-                }
-                /*this.Hide();
-                Event_Viewer f2 = new Event_Viewer();
-                f2.ShowDialog();*/
-            }
 
-            catch (Exception ex)
-
+            if (email_textbox.Text == "" || password_textbox.Text == "")
             {
+                MessageBox.Show("Enter credentials.");
+            }
+            else
+            {
+                try
+                {
+                    /*string password = " ";
+                    if (cmd.ExecuteScalar().ToString() is null)
+                    {
+                        MessageBox.Show("Enter something please!");
+                    }
+                    else
+                    {
+                        password = cmd.ExecuteScalar().ToString();
+                    }*/
 
-                MessageBox.Show("Unable to login");
+                    string password = cmd.ExecuteScalar().ToString();
 
+                    if (password == password_textbox.Text)
+                    {
+                        this.Hide();
+                        Event_Viewer f2 = new Event_Viewer();
+                        f2.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong Password!!!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unable to login");
+                }
+            }
 
 
 
 
                 // email_textbox.Text == student_id.email;
                 //   student_id.password_2 == password_textbox.Text;
-            }
+            
         }
     }
 }
