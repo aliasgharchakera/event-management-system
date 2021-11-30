@@ -24,7 +24,7 @@ namespace Event_Management_CS355
 
         private void EventView_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //MessageBox.Show(EventView_datagrid.CurrentRow.Cells.ToString());
         }
 
         private void button_Add_Click(object sender, EventArgs e)

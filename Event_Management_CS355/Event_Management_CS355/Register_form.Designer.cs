@@ -38,7 +38,6 @@ namespace Event_Management_CS355
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.griupBox = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -154,14 +153,14 @@ namespace Event_Management_CS355
             // 
             this.groupBox3.Location = new System.Drawing.Point(12, 353);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(319, 63);
+            this.groupBox3.Size = new System.Drawing.Size(319, 152);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "General Details";
             // 
             // button_add
             // 
-            this.button_add.Location = new System.Drawing.Point(256, 143);
+            this.button_add.Location = new System.Drawing.Point(540, 515);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(75, 23);
             this.button_add.TabIndex = 2;
@@ -172,7 +171,7 @@ namespace Event_Management_CS355
             // button_cancel
             // 
             this.button_cancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button_cancel.Location = new System.Drawing.Point(175, 143);
+            this.button_cancel.Location = new System.Drawing.Point(450, 515);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(75, 23);
             this.button_cancel.TabIndex = 3;
@@ -184,7 +183,7 @@ namespace Event_Management_CS355
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 169);
+            this.ClientSize = new System.Drawing.Size(654, 593);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_add);
             this.Controls.Add(this.groupBox3);
@@ -203,7 +202,6 @@ namespace Event_Management_CS355
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox_generaldetails;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox griupBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;

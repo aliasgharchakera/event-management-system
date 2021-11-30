@@ -29,14 +29,22 @@ namespace Event_Management_CS355
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Upcoming = new System.Windows.Forms.CheckBox();
             this.checkBox_past = new System.Windows.Forms.CheckBox();
             this.checkbox_open = new System.Windows.Forms.CheckBox();
             this.checkBox_student_only = new System.Windows.Forms.CheckBox();
             this.groupBox_filter = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.trackBar_maxBudget = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,24 +60,22 @@ namespace Event_Management_CS355
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_Add = new System.Windows.Forms.Button();
             this.button_update = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar_maxBudget = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox_filter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).BeginInit();
             this.SuspendLayout();
             // 
             // Upcoming
             // 
             this.Upcoming.AutoSize = true;
-            this.Upcoming.Location = new System.Drawing.Point(219, 229);
+            this.Upcoming.Location = new System.Drawing.Point(219, 274);
             this.Upcoming.Name = "Upcoming";
             this.Upcoming.Size = new System.Drawing.Size(74, 17);
             this.Upcoming.TabIndex = 6;
@@ -80,7 +86,7 @@ namespace Event_Management_CS355
             // checkBox_past
             // 
             this.checkBox_past.AutoSize = true;
-            this.checkBox_past.Location = new System.Drawing.Point(219, 253);
+            this.checkBox_past.Location = new System.Drawing.Point(219, 297);
             this.checkBox_past.Name = "checkBox_past";
             this.checkBox_past.Size = new System.Drawing.Size(47, 17);
             this.checkBox_past.TabIndex = 7;
@@ -91,7 +97,7 @@ namespace Event_Management_CS355
             // checkbox_open
             // 
             this.checkbox_open.AutoSize = true;
-            this.checkbox_open.Location = new System.Drawing.Point(219, 276);
+            this.checkbox_open.Location = new System.Drawing.Point(219, 320);
             this.checkbox_open.Name = "checkbox_open";
             this.checkbox_open.Size = new System.Drawing.Size(94, 17);
             this.checkbox_open.TabIndex = 8;
@@ -102,7 +108,7 @@ namespace Event_Management_CS355
             // checkBox_student_only
             // 
             this.checkBox_student_only.AutoSize = true;
-            this.checkBox_student_only.Location = new System.Drawing.Point(219, 296);
+            this.checkBox_student_only.Location = new System.Drawing.Point(219, 343);
             this.checkBox_student_only.Name = "checkBox_student_only";
             this.checkBox_student_only.Size = new System.Drawing.Size(85, 17);
             this.checkBox_student_only.TabIndex = 9;
@@ -112,6 +118,12 @@ namespace Event_Management_CS355
             // 
             // groupBox_filter
             // 
+            this.groupBox_filter.Controls.Add(this.label12);
+            this.groupBox_filter.Controls.Add(this.label11);
+            this.groupBox_filter.Controls.Add(this.label10);
+            this.groupBox_filter.Controls.Add(this.label9);
+            this.groupBox_filter.Controls.Add(this.dateTimePicker3);
+            this.groupBox_filter.Controls.Add(this.label8);
             this.groupBox_filter.Controls.Add(this.label7);
             this.groupBox_filter.Controls.Add(this.label4);
             this.groupBox_filter.Controls.Add(this.trackBar_maxBudget);
@@ -138,10 +150,78 @@ namespace Event_Management_CS355
             this.groupBox_filter.Text = "Filter";
             this.groupBox_filter.Enter += new System.EventHandler(this.groupBox_filter_Enter);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(34, 140);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Min Budget";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Max Budget";
+            // 
+            // trackBar_maxBudget
+            // 
+            this.trackBar_maxBudget.AllowDrop = true;
+            this.trackBar_maxBudget.Location = new System.Drawing.Point(125, 191);
+            this.trackBar_maxBudget.Maximum = 50000;
+            this.trackBar_maxBudget.Name = "trackBar_maxBudget";
+            this.trackBar_maxBudget.Size = new System.Drawing.Size(179, 45);
+            this.trackBar_maxBudget.TabIndex = 24;
+            this.trackBar_maxBudget.Value = 20;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(125, 140);
+            this.trackBar1.Maximum = 50000;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(179, 45);
+            this.trackBar1.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "EndDate";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "StartDate";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(63, 55);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 20;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(63, 29);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 307);
+            this.label3.Location = new System.Drawing.Point(5, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 16;
@@ -150,7 +230,7 @@ namespace Event_Management_CS355
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 254);
+            this.label2.Location = new System.Drawing.Point(11, 304);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 15;
@@ -159,7 +239,7 @@ namespace Event_Management_CS355
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 210);
+            this.label1.Location = new System.Drawing.Point(11, 266);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 14;
@@ -168,7 +248,7 @@ namespace Event_Management_CS355
             // comboBox_category
             // 
             this.comboBox_category.FormattingEnabled = true;
-            this.comboBox_category.Location = new System.Drawing.Point(63, 275);
+            this.comboBox_category.Location = new System.Drawing.Point(63, 304);
             this.comboBox_category.Name = "comboBox_category";
             this.comboBox_category.Size = new System.Drawing.Size(121, 21);
             this.comboBox_category.TabIndex = 12;
@@ -176,7 +256,7 @@ namespace Event_Management_CS355
             // comboBox_location
             // 
             this.comboBox_location.FormattingEnabled = true;
-            this.comboBox_location.Location = new System.Drawing.Point(63, 227);
+            this.comboBox_location.Location = new System.Drawing.Point(63, 263);
             this.comboBox_location.Name = "comboBox_location";
             this.comboBox_location.Size = new System.Drawing.Size(121, 21);
             this.comboBox_location.TabIndex = 11;
@@ -184,7 +264,7 @@ namespace Event_Management_CS355
             // comboBox_organizer
             // 
             this.comboBox_organizer.FormattingEnabled = true;
-            this.comboBox_organizer.Location = new System.Drawing.Point(63, 325);
+            this.comboBox_organizer.Location = new System.Drawing.Point(63, 344);
             this.comboBox_organizer.Name = "comboBox_organizer";
             this.comboBox_organizer.Size = new System.Drawing.Size(121, 21);
             this.comboBox_organizer.TabIndex = 10;
@@ -199,14 +279,14 @@ namespace Event_Management_CS355
             // 
             // EventView_datagrid
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.EventView_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EventView_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EvenName_1,
@@ -214,24 +294,25 @@ namespace Event_Management_CS355
             this.Location,
             this.Organizer,
             this.Category});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle14;
             this.EventView_datagrid.Location = new System.Drawing.Point(12, 12);
             this.EventView_datagrid.Name = "EventView_datagrid";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.EventView_datagrid.ReadOnly = true;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.EventView_datagrid.Size = new System.Drawing.Size(544, 442);
             this.EventView_datagrid.TabIndex = 15;
             this.EventView_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventView_datagrid_CellContentClick);
@@ -240,26 +321,31 @@ namespace Event_Management_CS355
             // 
             this.EvenName_1.HeaderText = "EventName";
             this.EvenName_1.Name = "EvenName_1";
+            this.EvenName_1.ReadOnly = true;
             // 
             // DateTime
             // 
             this.DateTime.HeaderText = "Datetime";
             this.DateTime.Name = "DateTime";
+            this.DateTime.ReadOnly = true;
             // 
             // Location
             // 
             this.Location.HeaderText = "Location";
             this.Location.Name = "Location";
+            this.Location.ReadOnly = true;
             // 
             // Organizer
             // 
             this.Organizer.HeaderText = "Organizer";
             this.Organizer.Name = "Organizer";
+            this.Organizer.ReadOnly = true;
             // 
             // Category
             // 
             this.Category.HeaderText = "Category";
             this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
             // 
             // button_Add
             // 
@@ -281,73 +367,59 @@ namespace Event_Management_CS355
             this.button_update.UseVisualStyleBackColor = true;
             this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
-            // dateTimePicker1
+            // label8
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(63, 29);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 19;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Start Time";
             // 
-            // dateTimePicker2
+            // dateTimePicker3
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(63, 55);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 20;
+            this.dateTimePicker3.CustomFormat = "HH:MM";
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker3.Location = new System.Drawing.Point(63, 86);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker3.TabIndex = 27;
             // 
-            // label5
+            // label9
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 35);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "StartDate";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(122, 124);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "0";
             // 
-            // label6
+            // label10
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 61);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "EndDate";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(122, 175);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "0";
             // 
-            // trackBar1
+            // label11
             // 
-            this.trackBar1.Location = new System.Drawing.Point(78, 94);
-            this.trackBar1.Maximum = 50000;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(179, 45);
-            this.trackBar1.TabIndex = 23;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(273, 124);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "50,000";
             // 
-            // trackBar_maxBudget
+            // label12
             // 
-            this.trackBar_maxBudget.AllowDrop = true;
-            this.trackBar_maxBudget.Location = new System.Drawing.Point(78, 145);
-            this.trackBar_maxBudget.Maximum = 50000;
-            this.trackBar_maxBudget.Name = "trackBar_maxBudget";
-            this.trackBar_maxBudget.Size = new System.Drawing.Size(179, 45);
-            this.trackBar_maxBudget.TabIndex = 24;
-            this.trackBar_maxBudget.Value = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 145);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Max Budget";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Min Budget";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(273, 175);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "50,000";
             // 
             // Event_Viewer
             // 
@@ -364,9 +436,9 @@ namespace Event_Management_CS355
             this.Load += new System.EventHandler(this.Event_Viewer_Load);
             this.groupBox_filter.ResumeLayout(false);
             this.groupBox_filter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,5 +472,11 @@ namespace Event_Management_CS355
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

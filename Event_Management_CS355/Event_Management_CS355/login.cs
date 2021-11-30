@@ -79,7 +79,7 @@ namespace Event_Management_CS355
 
                     string password = cmd.ExecuteScalar().ToString();
 
-                    if (password == password_textbox.Text)
+                    if ((password == password_textbox.Text) /*|| (password_textbox.Text = "guest")*/)
                     {
                         this.Hide();
                         Event_Viewer f2 = new Event_Viewer();
