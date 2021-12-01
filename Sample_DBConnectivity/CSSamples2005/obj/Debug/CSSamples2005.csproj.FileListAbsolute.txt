@@ -72,3 +72,18 @@ C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005
 C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.CopyComplete
 C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.exe
 C:\Courses\Databases\Fall 2021\Labs\Lab 12 - Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.pdb
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe.config
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.exe
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\bin\Debug\CSSamples2005.pdb
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.AssemblyReference.cache
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Demo.resources
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Form1.resources
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Login.resources
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.Properties.Resources.resources
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.ReportViewer.resources
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.GenerateResource.cache
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.CoreCompileInputs.cache
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.csproj.CopyComplete
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.exe
+F:\Documents\HabibU\5. Semester 3 - Fall 2021\XueXi\DBMS - CS 355\DBMS Project\Sample_DBConnectivity\CSSamples2005\obj\Debug\CSSamples2005.pdb
