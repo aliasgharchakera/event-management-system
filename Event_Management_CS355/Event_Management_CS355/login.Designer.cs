@@ -80,7 +80,7 @@ namespace Event_Management_CS355
             this.login_label.AutoSize = true;
             this.login_label.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.login_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_label.Location = new System.Drawing.Point(53, 33);
+            this.login_label.Location = new System.Drawing.Point(92, 34);
             this.login_label.Name = "login_label";
             this.login_label.Size = new System.Drawing.Size(195, 73);
             this.login_label.TabIndex = 4;

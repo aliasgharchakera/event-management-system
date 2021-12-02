@@ -29,9 +29,9 @@ namespace Event_Management_CS355
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Upcoming = new System.Windows.Forms.CheckBox();
             this.checkBox_past = new System.Windows.Forms.CheckBox();
             this.checkbox_open = new System.Windows.Forms.CheckBox();
@@ -67,6 +67,8 @@ namespace Event_Management_CS355
             this.button_Add = new System.Windows.Forms.Button();
             this.button_refresh = new System.Windows.Forms.Button();
             this.button_updateEvent = new System.Windows.Forms.Button();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.Approved = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox_filter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_minBudget)).BeginInit();
@@ -111,9 +113,9 @@ namespace Event_Management_CS355
             this.checkBox_student_only.AutoSize = true;
             this.checkBox_student_only.Location = new System.Drawing.Point(219, 343);
             this.checkBox_student_only.Name = "checkBox_student_only";
-            this.checkBox_student_only.Size = new System.Drawing.Size(72, 17);
+            this.checkBox_student_only.Size = new System.Drawing.Size(92, 17);
             this.checkBox_student_only.TabIndex = 9;
-            this.checkBox_student_only.Text = "Approved";
+            this.checkBox_student_only.Text = "Not Approved";
             this.checkBox_student_only.UseVisualStyleBackColor = true;
             this.checkBox_student_only.CheckedChanged += new System.EventHandler(this.checkBox_student_only_CheckedChanged);
             // 
@@ -334,40 +336,40 @@ namespace Event_Management_CS355
             // 
             // EventView_datagrid
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.EventView_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EventView_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EvenName_1,
             this.DateTime,
             this.Location,
             this.Organizer,
-            this.Category});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Category,
+            this.Approved});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.EventView_datagrid.Location = new System.Drawing.Point(12, 12);
             this.EventView_datagrid.Name = "EventView_datagrid";
-            this.EventView_datagrid.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.EventView_datagrid.Size = new System.Drawing.Size(544, 442);
             this.EventView_datagrid.TabIndex = 15;
             this.EventView_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventView_datagrid_CellContentClick);
@@ -376,31 +378,26 @@ namespace Event_Management_CS355
             // 
             this.EvenName_1.HeaderText = "EventName";
             this.EvenName_1.Name = "EvenName_1";
-            this.EvenName_1.ReadOnly = true;
             // 
             // DateTime
             // 
             this.DateTime.HeaderText = "Datetime";
             this.DateTime.Name = "DateTime";
-            this.DateTime.ReadOnly = true;
             // 
             // Location
             // 
             this.Location.HeaderText = "Location";
             this.Location.Name = "Location";
-            this.Location.ReadOnly = true;
             // 
             // Organizer
             // 
             this.Organizer.HeaderText = "Organizer";
             this.Organizer.Name = "Organizer";
-            this.Organizer.ReadOnly = true;
             // 
             // Category
             // 
             this.Category.HeaderText = "Category";
             this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
             // 
             // button_Add
             // 
@@ -424,18 +421,35 @@ namespace Event_Management_CS355
             // 
             // button_updateEvent
             // 
-            this.button_updateEvent.Location = new System.Drawing.Point(688, 409);
+            this.button_updateEvent.Enabled = false;
+            this.button_updateEvent.Location = new System.Drawing.Point(654, 409);
             this.button_updateEvent.Name = "button_updateEvent";
             this.button_updateEvent.Size = new System.Drawing.Size(103, 23);
             this.button_updateEvent.TabIndex = 18;
             this.button_updateEvent.Text = "Update Event";
             this.button_updateEvent.UseVisualStyleBackColor = true;
             // 
+            // button_delete
+            // 
+            this.button_delete.Location = new System.Drawing.Point(761, 409);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(66, 23);
+            this.button_delete.TabIndex = 19;
+            this.button_delete.Text = "Delete";
+            this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Approved
+            // 
+            this.Approved.HeaderText = "Approved";
+            this.Approved.Name = "Approved";
+            // 
             // Event_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 467);
+            this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_updateEvent);
             this.Controls.Add(this.button_refresh);
             this.Controls.Add(this.button_Add);
@@ -490,5 +504,7 @@ namespace Event_Management_CS355
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker_start_time;
         private System.Windows.Forms.Button button_updateEvent;
+        private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Approved;
     }
 }

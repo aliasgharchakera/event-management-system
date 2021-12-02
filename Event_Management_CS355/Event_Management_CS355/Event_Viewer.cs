@@ -1,25 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Event_Management_CS355
 {
     public partial class Event_Viewer : Form
     {
+        bool isAdmin;
         public Event_Viewer()
         {
             InitializeComponent();
         }
 
+        public Event_Viewer(bool privilege)
+        {
+            InitializeComponent();
+            isAdmin = privilege;
+        }
+
+
         private void Event_Viewer_Load(object sender, EventArgs e)
         {
             EventView_datagrid.Rows.Add("HUMUN", "29-Nov-2021", "Auditorium", "HU Public Speaking Club", "Competition");
+            if (isAdmin == false)
+            {
+                EventView_datagrid.ReadOnly = true;
+                button_delete.Enabled = false;
+                button_updateEvent.Enabled = false;
+                button_Add.Enabled = false;
+            }
         }
 
         private void EventView_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -69,6 +77,11 @@ namespace Event_Management_CS355
         private void button_update_Click(object sender, EventArgs e)
         {
             //do not know what to add
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
