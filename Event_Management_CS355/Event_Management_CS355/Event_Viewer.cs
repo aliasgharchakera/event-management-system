@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Event_Management_CS355
 {
@@ -16,11 +18,32 @@ namespace Event_Management_CS355
             InitializeComponent();
             isAdmin = privilege;
         }
-
+        public string conString = "Data Source=(local);Initial Catalog=Event_Management;Integrated Security=True";
 
         private void Event_Viewer_Load(object sender, EventArgs e)
         {
-            EventView_datagrid.Rows.Add("HUMUN", "29-Nov-2021", "Auditorium", "HU Public Speaking Club", "Competition");
+
+            SqlConnection conn = new SqlConnection(conString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
+            conn.Open();
+
+
+            cmd.CommandText = "select * from GridViewFinal";
+            /*cmd.Parameters.Add(new SqlParameter("@user", email_textbox.Text));*/
+
+            cmd.CommandType = CommandType.Text;
+
+            SqlDataReader grid_read = cmd.ExecuteReader();
+
+            while (grid_read.Read())
+            {
+                EventView_datagrid.Rows.Add(grid_read["eventName"]);           
+            }
+
+            /*EventView_datagrid.Rows.Add("HUMUN", "29-Nov-2021", "Auditorium", "HU Public Speaking Club", "Competition");*/
+            
+            
             if (isAdmin == false)
             {
                 EventView_datagrid.ReadOnly = true;

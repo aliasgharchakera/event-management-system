@@ -370,7 +370,7 @@ namespace Event_Management_CS355
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.EventView_datagrid.Size = new System.Drawing.Size(544, 442);
+            this.EventView_datagrid.Size = new System.Drawing.Size(545, 442);
             this.EventView_datagrid.TabIndex = 15;
             this.EventView_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventView_datagrid_CellContentClick);
             // 
