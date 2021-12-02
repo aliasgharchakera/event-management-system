@@ -80,6 +80,7 @@ namespace Event_Management_CS355
                 listBox_vendors.Items.Add(grid_read["Name"]);
                 /*                EventView_datagrid.Rows.Add(grid_read["eventName"]);
                 */
+
             }
 
         }
