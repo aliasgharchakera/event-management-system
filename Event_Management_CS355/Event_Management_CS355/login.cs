@@ -21,7 +21,8 @@ namespace Event_Management_CS355
 
         private void Login_form_Load(object sender, EventArgs e)
         {
-
+            
+            
         }
 
         private void email_textbox_TextChanged(object sender, EventArgs e)
@@ -34,30 +35,23 @@ namespace Event_Management_CS355
             this.Close();
         }
 
-        public string conString = "Data Source=ANOTHER-IDEAPAD;Initial Catalog = EventManagement; Integrated Security = True";
+        public string conString = "Data Source=(local);Initial Catalog=Event_Management;Integrated Security=True";
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*this.Hide();
-            Event_Viewer f2 = new Event_Viewer();
-            f2.ShowDialog();*/
             SqlConnection conn = new SqlConnection(conString);
-
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;
             conn.Open();
 
 
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
-            //cmd.CommandText = "Select username from employees where username = '" + txtUser.Text + "' and pwd = '" + txtPwd.Text + "'";
-            cmd.CommandText = "Select pwd from Student where email = @user";
+            cmd.CommandText = "Select password_2 from Students where email = @user";
             cmd.Parameters.Add(new SqlParameter("@user", email_textbox.Text));
-            /*cmd.Parameters.Add(new SqlParameter("@pwd", password_textbox.Text));*/
 
             cmd.CommandType = CommandType.Text;
 
-
+            
 
             if (email_textbox.Text == "" || password_textbox.Text == "")
             {
@@ -67,27 +61,27 @@ namespace Event_Management_CS355
             {
                 try
                 {
-                    /*string password = " ";
-                    if (cmd.ExecuteScalar().ToString() is null)
-                    {
-                        MessageBox.Show("Enter something please!");
-                    }
-                    else
-                    {
-                        password = cmd.ExecuteScalar().ToString();
-                    }*/
 
-                    string password = cmd.ExecuteScalar().ToString();
-
-                    if ((password == password_textbox.Text) /*|| (password_textbox.Text = "guest")*/)
+                    if (email_textbox.Text == "admin" && password_textbox.Text == "admin")
                     {
                         this.Hide();
-                        Event_Viewer f2 = new Event_Viewer();
+                        Event_Viewer f2 = new Event_Viewer(true);
                         f2.ShowDialog();
                     }
                     else
                     {
-                        MessageBox.Show("Wrong Password!!!!");
+                        string password = cmd.ExecuteScalar().ToString();
+
+                        if ((password == password_textbox.Text) /*|| (password_textbox.Text = "guest")*/)
+                        {
+                            this.Hide();
+                            Event_Viewer f2 = new Event_Viewer(false);
+                            f2.ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wrong Password!!!!");
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -95,12 +89,6 @@ namespace Event_Management_CS355
                     MessageBox.Show("Unable to login");
                 }
             }
-
-
-
-
-                // email_textbox.Text == student_id.email;
-                //   student_id.password_2 == password_textbox.Text;
             
         }
     }

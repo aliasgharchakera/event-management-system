@@ -30,6 +30,15 @@ namespace Event_Management_CS355
         private void InitializeComponent()
         {
             this.groupBox_generaldetails = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker_eventTime = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_eventDate = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox_location = new System.Windows.Forms.ComboBox();
             this.textBox_budget = new System.Windows.Forms.TextBox();
             this.textBox_org = new System.Windows.Forms.TextBox();
@@ -40,39 +49,28 @@ namespace Event_Management_CS355
             this.label1 = new System.Windows.Forms.Label();
             this.button_add = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker_eventDate = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker_eventTime = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox_inventory = new System.Windows.Forms.CheckedListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_addVendors = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.checkedListBox_inventory = new System.Windows.Forms.CheckedListBox();
+            this.checkBox_online = new System.Windows.Forms.CheckBox();
+            this.listBox_vendors = new System.Windows.Forms.ListBox();
+            this.listBox_sponsors = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox_generaldetails.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox_generaldetails
             // 
-            this.groupBox_generaldetails.Controls.Add(this.label11);
-            this.groupBox_generaldetails.Controls.Add(this.textBox4);
+            this.groupBox_generaldetails.Controls.Add(this.checkBox_online);
             this.groupBox_generaldetails.Controls.Add(this.label9);
-            this.groupBox_generaldetails.Controls.Add(this.label8);
             this.groupBox_generaldetails.Controls.Add(this.label7);
             this.groupBox_generaldetails.Controls.Add(this.label6);
             this.groupBox_generaldetails.Controls.Add(this.label5);
             this.groupBox_generaldetails.Controls.Add(this.comboBox1);
             this.groupBox_generaldetails.Controls.Add(this.dateTimePicker_eventTime);
             this.groupBox_generaldetails.Controls.Add(this.dateTimePicker_eventDate);
-            this.groupBox_generaldetails.Controls.Add(this.textBox2);
             this.groupBox_generaldetails.Controls.Add(this.textBox1);
             this.groupBox_generaldetails.Controls.Add(this.comboBox_location);
             this.groupBox_generaldetails.Controls.Add(this.textBox_budget);
@@ -84,10 +82,86 @@ namespace Event_Management_CS355
             this.groupBox_generaldetails.Controls.Add(this.label1);
             this.groupBox_generaldetails.Location = new System.Drawing.Point(12, 21);
             this.groupBox_generaldetails.Name = "groupBox_generaldetails";
-            this.groupBox_generaldetails.Size = new System.Drawing.Size(319, 304);
+            this.groupBox_generaldetails.Size = new System.Drawing.Size(319, 323);
             this.groupBox_generaldetails.TabIndex = 0;
             this.groupBox_generaldetails.TabStop = false;
             this.groupBox_generaldetails.Text = "General Details";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 248);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Club:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(160, 94);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Sponsors:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 194);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Duration (hrs):";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 167);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Time";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Date:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(85, 248);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // dateTimePicker_eventTime
+            // 
+            this.dateTimePicker_eventTime.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dateTimePicker_eventTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker_eventTime.Location = new System.Drawing.Point(85, 167);
+            this.dateTimePicker_eventTime.Name = "dateTimePicker_eventTime";
+            this.dateTimePicker_eventTime.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_eventTime.TabIndex = 11;
+            // 
+            // dateTimePicker_eventDate
+            // 
+            this.dateTimePicker_eventDate.Location = new System.Drawing.Point(85, 140);
+            this.dateTimePicker_eventDate.Name = "dateTimePicker_eventDate";
+            this.dateTimePicker_eventDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_eventDate.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(85, 194);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 8;
             // 
             // comboBox_location
             // 
@@ -177,143 +251,83 @@ namespace Event_Management_CS355
             this.button_cancel.UseVisualStyleBackColor = true;
             this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(85, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(85, 221);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // dateTimePicker_eventDate
-            // 
-            this.dateTimePicker_eventDate.Location = new System.Drawing.Point(85, 140);
-            this.dateTimePicker_eventDate.Name = "dateTimePicker_eventDate";
-            this.dateTimePicker_eventDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker_eventDate.TabIndex = 10;
-            // 
-            // dateTimePicker_eventTime
-            // 
-            this.dateTimePicker_eventTime.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dateTimePicker_eventTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker_eventTime.Location = new System.Drawing.Point(85, 167);
-            this.dateTimePicker_eventTime.Name = "dateTimePicker_eventTime";
-            this.dateTimePicker_eventTime.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker_eventTime.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 248);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 12;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.listBox_sponsors);
             this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.listBox_vendors);
+            this.groupBox1.Controls.Add(this.button_addVendors);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.checkedListBox_inventory);
-            this.groupBox1.Location = new System.Drawing.Point(12, 331);
+            this.groupBox1.Location = new System.Drawing.Point(12, 350);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(319, 204);
+            this.groupBox1.Size = new System.Drawing.Size(319, 185);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Others";
+            // 
+            // button_addVendors
+            // 
+            this.button_addVendors.Location = new System.Drawing.Point(61, 89);
+            this.button_addVendors.Name = "button_addVendors";
+            this.button_addVendors.Size = new System.Drawing.Size(89, 23);
+            this.button_addVendors.TabIndex = 22;
+            this.button_addVendors.Text = "Add Vendors";
+            this.button_addVendors.UseVisualStyleBackColor = true;
+            this.button_addVendors.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 93);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Vendors:";
             // 
             // checkedListBox_inventory
             // 
             this.checkedListBox_inventory.FormattingEnabled = true;
             this.checkedListBox_inventory.Location = new System.Drawing.Point(6, 19);
             this.checkedListBox_inventory.Name = "checkedListBox_inventory";
-            this.checkedListBox_inventory.Size = new System.Drawing.Size(307, 124);
+            this.checkedListBox_inventory.Size = new System.Drawing.Size(307, 64);
             this.checkedListBox_inventory.TabIndex = 16;
             // 
-            // label5
+            // checkBox_online
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Date:";
+            this.checkBox_online.AutoSize = true;
+            this.checkBox_online.Location = new System.Drawing.Point(9, 283);
+            this.checkBox_online.Name = "checkBox_online";
+            this.checkBox_online.Size = new System.Drawing.Size(56, 17);
+            this.checkBox_online.TabIndex = 23;
+            this.checkBox_online.Text = "Online";
+            this.checkBox_online.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // listBox_vendors
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 167);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Time";
+            this.listBox_vendors.FormattingEnabled = true;
+            this.listBox_vendors.Location = new System.Drawing.Point(61, 118);
+            this.listBox_vendors.Name = "listBox_vendors";
+            this.listBox_vendors.Size = new System.Drawing.Size(89, 43);
+            this.listBox_vendors.TabIndex = 23;
             // 
-            // textBox4
+            // listBox_sponsors
             // 
-            this.textBox4.Location = new System.Drawing.Point(125, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 194);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Duration (hrs):";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 221);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Sponsors:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 248);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Club:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 275);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Expected Participants:";
+            this.listBox_sponsors.FormattingEnabled = true;
+            this.listBox_sponsors.Location = new System.Drawing.Point(214, 118);
+            this.listBox_sponsors.Name = "listBox_sponsors";
+            this.listBox_sponsors.Size = new System.Drawing.Size(89, 43);
+            this.listBox_sponsors.TabIndex = 25;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 149);
+            this.button1.Location = new System.Drawing.Point(214, 89);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Add Vendors";
+            this.button1.Size = new System.Drawing.Size(89, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Add Sponsors";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 153);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Vendors:";
             // 
             // Register_form
             // 
@@ -351,18 +365,19 @@ namespace Event_Management_CS355
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker_eventTime;
         private System.Windows.Forms.DateTimePicker dateTimePicker_eventDate;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox_inventory;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_addVendors;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox checkBox_online;
+        private System.Windows.Forms.ListBox listBox_vendors;
+        private System.Windows.Forms.ListBox listBox_sponsors;
+        private System.Windows.Forms.Button button1;
     }
 }

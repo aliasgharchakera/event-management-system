@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSponsor.Designer.cs">
+      <DependentUpon>AddSponsor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Event_Viewer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Event_Viewer.Designer.cs">
       <DependentUpon>Event_Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor Details.Designer.cs">
+      <DependentUpon>Vendor Details.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -66,8 +78,14 @@
     <Compile Include="Register_form.Designer.cs">
       <DependentUpon>Register_form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddSponsor.resx">
+      <DependentUpon>AddSponsor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Event_Viewer.resx">
       <DependentUpon>Event_Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor Details.resx">
+      <DependentUpon>Vendor Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

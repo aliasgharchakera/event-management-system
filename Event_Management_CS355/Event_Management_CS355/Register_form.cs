@@ -44,6 +44,17 @@ namespace Event_Management_CS355
 
         private void button_add_Click(object sender, EventArgs e)
         {
+            //Insert query in event
+            /* 
+             Insert in events
+               textBox_name
+               organizer
+               budget
+               if (checkbox_online.checked()) {
+                    insert zoomId 
+                }
+            INSERT in sponsors
+               */
             this.Close();
         }
 
@@ -55,6 +66,12 @@ namespace Event_Management_CS355
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f2 = new Form1();
+            f2.ShowDialog();
         }
     }
 }
