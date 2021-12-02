@@ -29,22 +29,28 @@ namespace Event_Management_CS355
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Upcoming = new System.Windows.Forms.CheckBox();
             this.checkBox_past = new System.Windows.Forms.CheckBox();
             this.checkbox_open = new System.Windows.Forms.CheckBox();
             this.checkBox_student_only = new System.Windows.Forms.CheckBox();
             this.groupBox_filter = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker_start_time = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.trackBar_maxBudget = new System.Windows.Forms.TrackBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar_minBudget = new System.Windows.Forms.TrackBar();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_endDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker_startDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,16 +65,11 @@ namespace Event_Management_CS355
             this.Organizer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_Add = new System.Windows.Forms.Button();
-            this.button_update = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.button_refresh = new System.Windows.Forms.Button();
+            this.button_updateEvent = new System.Windows.Forms.Button();
             this.groupBox_filter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_minBudget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,9 +111,9 @@ namespace Event_Management_CS355
             this.checkBox_student_only.AutoSize = true;
             this.checkBox_student_only.Location = new System.Drawing.Point(219, 343);
             this.checkBox_student_only.Name = "checkBox_student_only";
-            this.checkBox_student_only.Size = new System.Drawing.Size(85, 17);
+            this.checkBox_student_only.Size = new System.Drawing.Size(72, 17);
             this.checkBox_student_only.TabIndex = 9;
-            this.checkBox_student_only.Text = "Student only";
+            this.checkBox_student_only.Text = "Approved";
             this.checkBox_student_only.UseVisualStyleBackColor = true;
             this.checkBox_student_only.CheckedChanged += new System.EventHandler(this.checkBox_student_only_CheckedChanged);
             // 
@@ -122,16 +123,16 @@ namespace Event_Management_CS355
             this.groupBox_filter.Controls.Add(this.label11);
             this.groupBox_filter.Controls.Add(this.label10);
             this.groupBox_filter.Controls.Add(this.label9);
-            this.groupBox_filter.Controls.Add(this.dateTimePicker3);
+            this.groupBox_filter.Controls.Add(this.dateTimePicker_start_time);
             this.groupBox_filter.Controls.Add(this.label8);
             this.groupBox_filter.Controls.Add(this.label7);
             this.groupBox_filter.Controls.Add(this.label4);
             this.groupBox_filter.Controls.Add(this.trackBar_maxBudget);
-            this.groupBox_filter.Controls.Add(this.trackBar1);
+            this.groupBox_filter.Controls.Add(this.trackBar_minBudget);
             this.groupBox_filter.Controls.Add(this.label6);
             this.groupBox_filter.Controls.Add(this.label5);
-            this.groupBox_filter.Controls.Add(this.dateTimePicker2);
-            this.groupBox_filter.Controls.Add(this.dateTimePicker1);
+            this.groupBox_filter.Controls.Add(this.dateTimePicker_endDate);
+            this.groupBox_filter.Controls.Add(this.dateTimePicker_startDate);
             this.groupBox_filter.Controls.Add(this.label3);
             this.groupBox_filter.Controls.Add(this.label2);
             this.groupBox_filter.Controls.Add(this.label1);
@@ -149,6 +150,60 @@ namespace Event_Management_CS355
             this.groupBox_filter.TabStop = false;
             this.groupBox_filter.Text = "Filter";
             this.groupBox_filter.Enter += new System.EventHandler(this.groupBox_filter_Enter);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(273, 175);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "50,000";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(273, 124);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "50,000";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(122, 175);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "0";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(122, 124);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "0";
+            // 
+            // dateTimePicker_start_time
+            // 
+            this.dateTimePicker_start_time.CustomFormat = "HH:MM";
+            this.dateTimePicker_start_time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker_start_time.Location = new System.Drawing.Point(63, 86);
+            this.dateTimePicker_start_time.Name = "dateTimePicker_start_time";
+            this.dateTimePicker_start_time.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_start_time.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Start Time";
             // 
             // label7
             // 
@@ -178,18 +233,18 @@ namespace Event_Management_CS355
             this.trackBar_maxBudget.TabIndex = 24;
             this.trackBar_maxBudget.Value = 20;
             // 
-            // trackBar1
+            // trackBar_minBudget
             // 
-            this.trackBar1.Location = new System.Drawing.Point(125, 140);
-            this.trackBar1.Maximum = 50000;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(179, 45);
-            this.trackBar1.TabIndex = 23;
+            this.trackBar_minBudget.Location = new System.Drawing.Point(125, 140);
+            this.trackBar_minBudget.Maximum = 50000;
+            this.trackBar_minBudget.Name = "trackBar_minBudget";
+            this.trackBar_minBudget.Size = new System.Drawing.Size(179, 45);
+            this.trackBar_minBudget.TabIndex = 23;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 61);
+            this.label6.Location = new System.Drawing.Point(9, 55);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 22;
@@ -198,25 +253,25 @@ namespace Event_Management_CS355
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 35);
+            this.label5.Location = new System.Drawing.Point(5, 29);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 21;
             this.label5.Text = "StartDate";
             // 
-            // dateTimePicker2
+            // dateTimePicker_endDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(63, 55);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 20;
+            this.dateTimePicker_endDate.Location = new System.Drawing.Point(63, 55);
+            this.dateTimePicker_endDate.Name = "dateTimePicker_endDate";
+            this.dateTimePicker_endDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_endDate.TabIndex = 20;
             // 
-            // dateTimePicker1
+            // dateTimePicker_startDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(63, 29);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dateTimePicker_startDate.Location = new System.Drawing.Point(63, 29);
+            this.dateTimePicker_startDate.Name = "dateTimePicker_startDate";
+            this.dateTimePicker_startDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_startDate.TabIndex = 19;
             // 
             // label3
             // 
@@ -279,14 +334,14 @@ namespace Event_Management_CS355
             // 
             // EventView_datagrid
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.EventView_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EventView_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EvenName_1,
@@ -294,25 +349,25 @@ namespace Event_Management_CS355
             this.Location,
             this.Organizer,
             this.Category});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EventView_datagrid.DefaultCellStyle = dataGridViewCellStyle5;
             this.EventView_datagrid.Location = new System.Drawing.Point(12, 12);
             this.EventView_datagrid.Name = "EventView_datagrid";
             this.EventView_datagrid.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.EventView_datagrid.Size = new System.Drawing.Size(544, 442);
             this.EventView_datagrid.TabIndex = 15;
             this.EventView_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventView_datagrid_CellContentClick);
@@ -357,87 +412,43 @@ namespace Event_Management_CS355
             this.button_Add.UseVisualStyleBackColor = true;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
-            // button_update
+            // button_refresh
             // 
-            this.button_update.Location = new System.Drawing.Point(573, 409);
-            this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(75, 23);
-            this.button_update.TabIndex = 17;
-            this.button_update.Text = "Update";
-            this.button_update.UseVisualStyleBackColor = true;
-            this.button_update.Click += new System.EventHandler(this.button_update_Click);
+            this.button_refresh.Location = new System.Drawing.Point(573, 409);
+            this.button_refresh.Name = "button_refresh";
+            this.button_refresh.Size = new System.Drawing.Size(75, 23);
+            this.button_refresh.TabIndex = 17;
+            this.button_refresh.Text = "Refresh";
+            this.button_refresh.UseVisualStyleBackColor = true;
+            this.button_refresh.Click += new System.EventHandler(this.button_update_Click);
             // 
-            // label8
+            // button_updateEvent
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Start Time";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.CustomFormat = "HH:MM";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(63, 86);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 27;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(122, 124);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(122, 175);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(273, 124);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 13);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "50,000";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(273, 175);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "50,000";
+            this.button_updateEvent.Location = new System.Drawing.Point(688, 409);
+            this.button_updateEvent.Name = "button_updateEvent";
+            this.button_updateEvent.Size = new System.Drawing.Size(103, 23);
+            this.button_updateEvent.TabIndex = 18;
+            this.button_updateEvent.Text = "Update Event";
+            this.button_updateEvent.UseVisualStyleBackColor = true;
             // 
             // Event_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 467);
-            this.Controls.Add(this.button_update);
+            this.Controls.Add(this.button_updateEvent);
+            this.Controls.Add(this.button_refresh);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.EventView_datagrid);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.groupBox_filter);
             this.Name = "Event_Viewer";
-            this.Text = "Event_Viewer";
+            this.Text = "Event Viewer (Admin)";
             this.Load += new System.EventHandler(this.Event_Viewer_Load);
             this.groupBox_filter.ResumeLayout(false);
             this.groupBox_filter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_minBudget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EventView_datagrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -457,7 +468,7 @@ namespace Event_Management_CS355
         private System.Windows.Forms.DataGridViewTextBoxColumn Organizer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.Button button_Add;
-        private System.Windows.Forms.Button button_update;
+        private System.Windows.Forms.Button button_refresh;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -467,16 +478,17 @@ namespace Event_Management_CS355
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TrackBar trackBar_maxBudget;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar_minBudget;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_endDate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_startDate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_start_time;
+        private System.Windows.Forms.Button button_updateEvent;
     }
 }

@@ -10,15 +10,24 @@ using System.Windows.Forms;
 
 namespace Event_Management_CS355
 {
-    public partial class Register_form : Form
+    public partial class Form1 : Form
     {
-        public Register_form()
+        public Form1()
         {
             InitializeComponent();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -33,28 +42,20 @@ namespace Event_Management_CS355
 
         }
 
-        private void Register_form_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            comboBox_location.Items.Add("Baithak");
-            comboBox_location.Items.Add("Courts");
-            comboBox_location.Items.Add("W-234");
-            comboBox_location.Items.Add("E-001");
-            comboBox_location.Items.Add("E-011");
+
         }
 
         private void button_add_Click(object sender, EventArgs e)
         {
+            // modify db
             this.Close();
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
