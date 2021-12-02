@@ -184,5 +184,24 @@ values (4, 1, 'HUMUN', 50000, 'www.humun.com', null, 'Debate Club')
 
 insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
 values (5, 5, 'Hamdast', 30000, 'www.serVe.com', null, 'SerVe Club')
+		
+select * from [Events]
+select * from locations
+--select * from 
 
-select * from Events
+create Procedure delete_event @event_id int as
+delete from Event_has_Guests
+where Events_idEvent = @event_id;
+delete from Item_Bookings
+where Events_idEvent = @event_id;
+delete from EventTimings
+where Events_idEvent = @event_id;
+delete from Volunteers
+where Events_idEvent = @event_id;
+delete from Student_Participants
+where Events_idEvent = @event_id;
+delete from Faculty_Participants
+where Events_idEvent = @event_id;
+delete from Events
+where idEvent = @event_id
+GO
