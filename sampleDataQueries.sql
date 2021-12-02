@@ -22,7 +22,8 @@ values(6523,'na6523@st.habib.edu.pk', 'Nasir Ali', 67891234, 'EE', 2023, 'hello6
 
 
 --Locations
-
+--alter table locations
+--add	locationName varchar (45)
 
 insert into Locations (roomCode, locationName, Capacity, isOpenSpace)
 values ('LB210', 'Library Room 210', 10, 0)
@@ -53,15 +54,15 @@ select * from Locations
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
 values (11, 'Junaid Ahmed Memon', 'DSSE', 01-01-2018, 0, '03002228888')
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
-values (16, 'Jimmy Page', 'EE', 01-01-2019, 1, '03009228888')
+values (6, 'Jimmy Page', 'EE', 01-01-2019, 1, '03009228888')
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
-values (15, 'Asmat Ullah', 'CS', 01-01-2018, 0, '03002228888')
+values (5, 'Asmat Ullah', 'CS', 01-01-2018, 0, '03002228888')
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
-values (13, 'Ahmed Usman', 'EE', 01-01-2018, 1, '03002233388')
+values (3, 'Ahmed Usman', 'EE', 01-01-2018, 1, '03002233388')
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
-values (14, 'Abdullah Bajwa', 'ENGR', 01-01-2020, 0, '03302233388')
+values (4, 'Abdullah Bajwa', 'ENGR', 01-01-2020, 0, '03302233388')
 insert into Faculty (Locations_idLocation, [Name], Department, HireDate, IsAdjunct, ContactNo)
-values (16, 'Nauman Naqvi', 'CH', 01-01-2015, 0, '03222228888')
+values (10, 'Nauman Naqvi', 'CH', 01-01-2015, 0, '03222228888')
 
 
 --Affiliates
@@ -83,34 +84,105 @@ values('MLK'	,'Roshi Nasir',	'roshinasir@mlk.com');
 insert into Affiliates(name,contactperson_name,email)
 values('DTRJ',	'ahmed ahmed',	'ahmedahmed@dtrj.com');
 
+select * from Affiliates
+
+--External_Vendors
+insert into External_Vendors(name,contactNo,email)
+values('Rahim Bhai',546879,NULL);
+
+insert into External_Vendors(name,contactNo,email)
+values('Robert Bhai',876435,NULL);
+
+insert into External_Vendors(name,contactNo,email)
+values('Walls Company Vendor',973457,'vendor@walls.com');
+
+insert into External_Vendors(name,contactNo,email)
+values('Saleem Shah',964112,NULL);
+
+insert into External_Vendors(name,contactNo,email)
+values('Saddam Ali',441286,NULL);
+
+select * from External_Vendors
+
+--Sponsors
+insert into Sponsors(name,contact_name,email)
+values('Habib Metro',	'Anwar ali',	'anwarali@metro.com');
+
+insert into Sponsors(name,contact_name,email)
+values('Lipton',	'Jason Ali',	'jasonali@lipton.com');
+
+insert into Sponsors(name,contact_name,email)
+values('Samsung',	'Sam Anwar',	'samanwar@samsung.com');
+
+insert into Sponsors(name,contact_name,email)
+values('Dell'	,'Barack Obama'	,'obama@dell.com');
+
+insert into Sponsors(name,contact_name,email)
+values('TCL',	'Bart Simpson',	'bartsimpson@tcl.com');
+
+insert into Sponsors(name,contact_name,email)
+values('IBM'	,'Homer Azmar'	,'homerazmat@ibm.com');
+
+select * from Sponsors
 
 --Clubs
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
-values (4, 3, 4, 'CSEC', 200000)
+values (4, 3, 18, 'CSEC', 200000)
 
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
 values (2, 5, 7, 'Math Club', 50000)
 
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
-values (1, 1, 8, 'SerVe Club', 150000)
+values (1, 1, 16, 'SerVe Club', 150000)
 
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
-values (6, 4, 3, 'Sustainability Club', 100000)
+values (6, 4, 15, 'Sustainability Club', 100000)
 
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
-values (5, 6, 9, 'Brain Hack', 50000)
+values (5, 6, 13, 'Brain Hack', 50000)
 
 insert into Club_chapters(Sponsors_idSponsors, Affiliates_idAffiliates, Faculty_idFaculty, [Name], AnnualBudget)
-values (3, 2, 11, 'Debate Club', 200000)
+values (3, 2, 17, 'Debate Club', 200000)
+
+select * from Club_chapters
 
 
+--Event Categories
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Competition','Competition of any type');
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Performance', 'Musical or Arts performances');
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Exhibition','Exhibition of Projects, Artworks, Research, etc');
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Seminar','Informative talks delivered by internal/external speakers');
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Recreation','Recreational activities including indoor/outdoor sports, screenings and concerts');
+
+insert into Event_Categories(categoryName,categoryDescription)
+values ('Cultural', 'Celebrations of any Cultural Events');
 
 
 --Events
-insert into [Events](Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
-values (1, 'Math Olympiad', 5000, 'www.google.com', null, 'Math Club')
 
-insert into [Events](Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+values (1, 1, 'Math Olympiad', 5000, 'www.google.com', null, 'Math Club')
 
+insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+values (2, 6, 'Sindh Culture Day', 2000, 'www.sindh.com', null, 'Debate Club')
 
-values (6, 'Sindh Culture Day', 2000, 'www.sindh.com', null, '')
+insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+values (3, 4, 'Earth Day', 30000, 'www.bruh.com', null, 'Sustainability Club')
+
+insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+values (4, 1, 'HUMUN', 50000, 'www.humun.com', null, 'Debate Club')
+
+insert into [Events](idEvent, Events_Categories_categoryID, [Name], Budget, PathToMedia, ZoomID, Organizer)
+values (5, 5, 'Hamdast', 30000, 'www.serVe.com', null, 'SerVe Club')
+
+select * from Events
