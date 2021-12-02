@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Event_Management_CS355
 {
@@ -17,6 +18,7 @@ namespace Event_Management_CS355
             InitializeComponent();
 
         }
+        public string conString = "Data Source=(local);Initial Catalog=Event_Management;Integrated Security=True";
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -44,17 +46,8 @@ namespace Event_Management_CS355
 
         private void button_add_Click(object sender, EventArgs e)
         {
-            //Insert query in event
-            /* 
-             Insert in events
-               textBox_name
-               organizer
-               budget
-               if (checkbox_online.checked()) {
-                    insert zoomId 
-                }
-            INSERT in sponsors
-               */
+            
+
             this.Close();
         }
 
@@ -72,6 +65,23 @@ namespace Event_Management_CS355
         {
             Form1 f2 = new Form1();
             f2.ShowDialog();
+        }
+
+        private void listBox_vendors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(conString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conn;            conn.Open();
+            cmd.CommandText = "select * from external_vendors";
+            SqlDataReader grid_read = cmd.ExecuteReader();
+
+            while (grid_read.Read())
+            {
+                listBox_vendors.Items.Add(grid_read["Name"]);
+                /*                EventView_datagrid.Rows.Add(grid_read["eventName"]);
+                */
+            }
+
         }
     }
 }

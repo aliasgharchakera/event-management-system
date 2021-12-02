@@ -47,6 +47,7 @@ namespace Event_Management_CS355
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -56,6 +57,7 @@ namespace Event_Management_CS355
             this.label2.Size = new System.Drawing.Size(87, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contact Number:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -65,6 +67,7 @@ namespace Event_Management_CS355
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Email:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox_name
             // 
@@ -72,6 +75,7 @@ namespace Event_Management_CS355
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(100, 20);
             this.textBox_name.TabIndex = 3;
+            this.textBox_name.TextChanged += new System.EventHandler(this.textBox_name_TextChanged);
             // 
             // textBox_cont_num
             // 
@@ -79,6 +83,7 @@ namespace Event_Management_CS355
             this.textBox_cont_num.Name = "textBox_cont_num";
             this.textBox_cont_num.Size = new System.Drawing.Size(100, 20);
             this.textBox_cont_num.TabIndex = 4;
+            this.textBox_cont_num.TextChanged += new System.EventHandler(this.textBox_cont_num_TextChanged);
             // 
             // textBox_email
             // 
@@ -86,6 +91,7 @@ namespace Event_Management_CS355
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.Size = new System.Drawing.Size(100, 20);
             this.textBox_email.TabIndex = 5;
+            this.textBox_email.TextChanged += new System.EventHandler(this.textBox_email_TextChanged);
             // 
             // button_add
             // 
