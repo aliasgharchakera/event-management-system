@@ -1,4 +1,4 @@
---set identity_insert students on
+set identity_insert students on
 insert into students(idstudent, email, [name], contactno, department, batch, password_2)
 values(6923,'ma06423@st.habib.edu.pk', 'Muhammad Uzair Amin', 12345678, 'CS', 2024, 'hello6423')
 
@@ -205,3 +205,22 @@ where Events_idEvent = @event_id;
 delete from Events
 where idEvent = @event_id
 GO
+
+create Procedure add_event @event_name varchar (45), @event_cat varchar (45), @event_budget int, @organizer varchar (45), @location varchar (45), @start_date date, @start_time time, @duration int as
+insert into Events(idEvent, [Name], Events_Categories_categoryID, Budget, PathToMedia, Organizer)
+values ((select max(idevent) from Events) + 1, @event_name, (select categoryID from Event_Categories where categoryName = @event_cat), @event_budget, null, @organizer);
+
+insert into EventTimings(Events_idEvent, Locations_idLocation, StartTime, EndTime)
+values ((select max(idevent) from Events) + 1, (select idLocation from Locations where locationName = @location), (SELECT CAST(@start_date AS DATETIME) + CAST(@start_time AS DATETIME)), (SELECT CAST(@start_date AS DATETIME) + dateadd(hour, @duration, CAST(@start_time AS DATETIME))))
+GO
+
+create Procedure update_event @event_id int, @event_name varchar (45), @event_cat varchar (45), @event_budget int, @organizer varchar (45), @location varchar (45), @start_date date, @start_time time, @duration int as
+update Events
+set [Name] = @event_name, Events_Categories_categoryID = (select categoryID from Event_Categories where categoryName = @event_cat), Budget = @event_budget, Organizer = @organizer
+where idEvent = @event_id;
+
+update EventTimings
+set Locations_idLocation = (select idLocation from Locations where locationName = @location), StartTime = (SELECT CAST(@start_date AS DATETIME) + CAST(@start_time AS DATETIME)), EndTime = (SELECT CAST(@start_date AS DATETIME) + dateadd(hour, @duration, CAST(@start_time AS DATETIME)))
+where Events_idEvent = @event_id;
+GO
+
