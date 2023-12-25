@@ -59,15 +59,17 @@ namespace Event_Management_CS355
             this.comboBox_organizer = new System.Windows.Forms.ComboBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.EventView_datagrid = new System.Windows.Forms.DataGridView();
-            this.EvenName_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Location = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Organizer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_Add = new System.Windows.Forms.Button();
             this.button_refresh = new System.Windows.Forms.Button();
             this.button_updateEvent = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EvenName_1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Location = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Organizer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Approved = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox_filter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_maxBudget)).BeginInit();
@@ -346,8 +348,10 @@ namespace Event_Management_CS355
             this.EventView_datagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.EventView_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EventView_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.EvenName_1,
-            this.DateTime,
+            this.StartTime,
+            this.EndTime,
             this.Location,
             this.Organizer,
             this.Category,
@@ -370,34 +374,9 @@ namespace Event_Management_CS355
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.EventView_datagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.EventView_datagrid.Size = new System.Drawing.Size(545, 442);
+            this.EventView_datagrid.Size = new System.Drawing.Size(541, 442);
             this.EventView_datagrid.TabIndex = 15;
             this.EventView_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EventView_datagrid_CellContentClick);
-            // 
-            // EvenName_1
-            // 
-            this.EvenName_1.HeaderText = "EventName";
-            this.EvenName_1.Name = "EvenName_1";
-            // 
-            // DateTime
-            // 
-            this.DateTime.HeaderText = "Datetime";
-            this.DateTime.Name = "DateTime";
-            // 
-            // Location
-            // 
-            this.Location.HeaderText = "Location";
-            this.Location.Name = "Location";
-            // 
-            // Organizer
-            // 
-            this.Organizer.HeaderText = "Organizer";
-            this.Organizer.Name = "Organizer";
-            // 
-            // Category
-            // 
-            this.Category.HeaderText = "Category";
-            this.Category.Name = "Category";
             // 
             // button_Add
             // 
@@ -439,6 +418,41 @@ namespace Event_Management_CS355
             this.button_delete.UseVisualStyleBackColor = true;
             this.button_delete.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "EventId";
+            this.Column1.Name = "Column1";
+            // 
+            // EvenName_1
+            // 
+            this.EvenName_1.HeaderText = "EventName";
+            this.EvenName_1.Name = "EvenName_1";
+            // 
+            // StartTime
+            // 
+            this.StartTime.HeaderText = "StartTime";
+            this.StartTime.Name = "StartTime";
+            // 
+            // EndTime
+            // 
+            this.EndTime.HeaderText = "EndTime";
+            this.EndTime.Name = "EndTime";
+            // 
+            // Location
+            // 
+            this.Location.HeaderText = "Location";
+            this.Location.Name = "Location";
+            // 
+            // Organizer
+            // 
+            this.Organizer.HeaderText = "Organizer";
+            this.Organizer.Name = "Organizer";
+            // 
+            // Category
+            // 
+            this.Category.HeaderText = "Category";
+            this.Category.Name = "Category";
+            // 
             // Approved
             // 
             this.Approved.HeaderText = "Approved";
@@ -476,11 +490,6 @@ namespace Event_Management_CS355
         private System.Windows.Forms.GroupBox groupBox_filter;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.DataGridView EventView_datagrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EvenName_1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Organizer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.Button button_Add;
         private System.Windows.Forms.Button button_refresh;
         private System.Windows.Forms.Label label3;
@@ -505,6 +514,13 @@ namespace Event_Management_CS355
         private System.Windows.Forms.DateTimePicker dateTimePicker_start_time;
         private System.Windows.Forms.Button button_updateEvent;
         private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EvenName_1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StartTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EndTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Organizer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Approved;
     }
 }

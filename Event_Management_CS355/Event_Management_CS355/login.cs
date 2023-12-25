@@ -53,14 +53,14 @@ namespace Event_Management_CS355
 
             
 
-            if (email_textbox.Text == "" || password_textbox.Text == "")
+            if (email_textbox.Text is null || password_textbox.Text is null)
             {
                 MessageBox.Show("Enter credentials.");
             }
             else
             {
-                try
-                {
+               /* try
+                {*/
 
                     if (email_textbox.Text == "admin" && password_textbox.Text == "admin")
                     {
@@ -83,11 +83,11 @@ namespace Event_Management_CS355
                             MessageBox.Show("Wrong Password!!!!");
                         }
                     }
-                }
-                catch (Exception ex)
+                /*}*/
+                /*catch (Exception ex)
                 {
                     MessageBox.Show("Unable to login");
-                }
+                }*/
             }
             
         }

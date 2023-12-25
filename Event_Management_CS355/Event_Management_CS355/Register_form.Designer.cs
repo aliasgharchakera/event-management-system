@@ -311,6 +311,7 @@ namespace Event_Management_CS355
             this.listBox_vendors.Name = "listBox_vendors";
             this.listBox_vendors.Size = new System.Drawing.Size(89, 43);
             this.listBox_vendors.TabIndex = 23;
+            this.listBox_vendors.SelectedIndexChanged += new System.EventHandler(this.listBox_vendors_SelectedIndexChanged);
             // 
             // listBox_sponsors
             // 
